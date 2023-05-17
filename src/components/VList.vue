@@ -24,6 +24,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+//@ts-ignore
 import IconPlus from "@/assets/icons/plus.svg?component";
 
 interface Props {

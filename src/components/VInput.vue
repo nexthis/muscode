@@ -13,9 +13,9 @@
 
 <script setup lang="ts">
 interface Props {
-  label?: string;
+  label?: string | number;
   class?: string;
-  modelValue?: string;
+  modelValue?: string | number;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -29,9 +29,9 @@ const emit = defineEmits<{
 }>();
 
 const handleChange = (e: Event) => {
-  const value = e.target!.value;
+  const target = e.target! as HTMLInputElement;
 
-  emit("update:modelValue", value);
+  emit("update:modelValue", target.value);
 };
 </script>
 

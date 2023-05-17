@@ -24,11 +24,9 @@ const emit = defineEmits<{
 }>();
 
 const handleChange = (e: Event) => {
-  console.log(e.target);
+  const target = e.target as HTMLSelectElement;
 
-  const value = e.target!.value;
-
-  emit("update:modelValue", value);
+  emit("update:modelValue", target.value);
 };
 </script>
 
