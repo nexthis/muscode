@@ -1,0 +1,33 @@
+@import "variable";
+@import "image";
+@import "shadow";
+@import "utils";
+@import "grid";
+
+
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: $font;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: $background;
+}
+
+
+#app {
+  max-width: $container;
+  margin: 0 auto;
+  // padding: 2rem;
+  text-align: center;
+}

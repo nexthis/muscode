@@ -1,0 +1,15 @@
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .icon{ 
+    $size: 50px;
+    width: $size;
+    height: $size;
+    &.small{
+      $size: 25px;
+      width: $size;
+      height: $size;
+    }
+  }
